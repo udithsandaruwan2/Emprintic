@@ -14,12 +14,12 @@ def indexView(request):
 
 def employeesView(request):
     """
-    Render the employee page.
+    Render the employees page.
     """
-    page = 'employee'
-    page_title = 'Employee'
+    page = 'employees'
+    page_title = 'Employees'
     context = {
         'page': page,
         'page_title': page_title,
     }
-    return render(request, 'employees/employee.html', context)
+    return render(request, 'employees/employees.html', context)
